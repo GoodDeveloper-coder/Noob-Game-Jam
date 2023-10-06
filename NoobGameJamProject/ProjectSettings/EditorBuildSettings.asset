@@ -11,4 +11,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/GoldScene(1).unity
     guid: 6b65c7b4c3687174d878c7e7d61e7a58
+  - enabled: 1
+    path: Assets/Scenes/GoldScene(1) 1.unity
+    guid: 1fb8432b088d0d7468150a550cd5a974
+  - enabled: 1
+    path: Assets/Scenes/GoldScene(1) 2.unity
+    guid: 821c36116c4fb004685ac800ccf577ab
   m_configObjects: {}
