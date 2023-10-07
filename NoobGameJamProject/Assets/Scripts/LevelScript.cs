@@ -13,6 +13,8 @@ public class LevelScript : MonoBehaviour
 
     public Animator anim;
 
+    public GameObject Muzic;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -50,11 +52,12 @@ public class LevelScript : MonoBehaviour
 
     public void handLevel(int levelIndex)
     {
+        DontDestroyOnLoad(Muzic);
         SceneManager.LoadScene(levelIndex); 
     }
 
     public void ClearPlayerPrefs()
     {
-        PlayerPrefs.SetInt("levels", 0);
+        PlayerPrefs.SetInt("levels", 1);
     }
 }

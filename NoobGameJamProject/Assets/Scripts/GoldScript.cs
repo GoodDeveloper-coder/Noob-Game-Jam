@@ -21,6 +21,7 @@ public class GoldScript : MonoBehaviour
         
     }
 
+    /*
     void OnTriggerEnter2D(Collider2D col)
     {
         if (col.name == "Player")
@@ -31,6 +32,18 @@ public class GoldScript : MonoBehaviour
             //anim.Play("CloseFateIn");
         }
     }
+    */
+
+    void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.name == "Player")
+        {
+            UnlockLevel();
+            StartCoroutine(Coroutine());
+        }
+    }
+
+
 
     public void UnlockLevel()
     {
